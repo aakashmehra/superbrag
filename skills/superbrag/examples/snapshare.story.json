@@ -1,0 +1,144 @@
+{
+  "brand": {
+    "name": "SnapShare",
+    "url": "aakashmehra.com/snapshare",
+    "primary": "#387fd9",
+    "accent": "#0a84ff",
+    "highlight": "#dcebff",
+    "ink": "#061226",
+    "background": "sky",
+    "paper": "#fafdff",
+    "dark": "#061226",
+    "fonts": {
+      "head": "Inter",
+      "ui": "Inter",
+      "script": "Caveat"
+    },
+    "style": {
+      "radius": 36,
+      "border": "#e8ecf2",
+      "shadow": "soft",
+      "tracking": -0.035,
+      "headWeight": 600,
+      "emphasis": "#0a84ff"
+    }
+  },
+  "voice": {
+    "provider": "kokoro",
+    "voice": "am_puck",
+    "pronounce": {}
+  },
+  "music": {
+    "track": "happy-beats-business-moves-vol-11-by-ende-dot-app.mp3",
+    "volume": 0.24
+  },
+  "scenes": [
+    {
+      "type": "results",
+      "say": "Most photos are only taken to send. Then they sit in your camera roll for years.",
+      "query": "Photos · Recents",
+      "results": [
+        {
+          "title": "IMG_4021 · A receipt",
+          "sub": "Taken to send, 3 years ago"
+        },
+        {
+          "title": "IMG_4022 · A parking spot",
+          "sub": "Taken to send, 2 years ago"
+        },
+        {
+          "title": "IMG_4023 · A price tag",
+          "sub": "Taken to send, last year"
+        }
+      ],
+      "title": "Taken once. Kept *for years.*",
+      "pill": "Still taking up your storage"
+    },
+    {
+      "type": "phone",
+      "bg": "brand",
+      "say": "Meet SnapShare, the camera that sends for you.",
+      "phone": "site/images-snapshare-phone-pick-app.webp",
+      "icon": "site/images-snapshare-icon.webp",
+      "kicker": "Meet SnapShare",
+      "title": "The camera that sends for you.",
+      "side": "left",
+      "hold": 0.5
+    },
+    {
+      "type": "phone",
+      "say": "Snap a photo, and it's copied for you. WhatsApp opens. Just paste.",
+      "phone": "site/images-snapshare-phone-snap-copied.webp",
+      "title": "One tap to *send.*",
+      "points": [
+        "Copied for you",
+        "WhatsApp opens",
+        "Just paste"
+      ],
+      "side": "right",
+      "hold": 0.5
+    },
+    {
+      "type": "phone",
+      "say": "Snap a batch, and send them all at once.",
+      "phone": "site/images-snapshare-phone-bulk.webp",
+      "title": "Snap a batch. *Send once.*",
+      "points": [
+        "Bulk mode",
+        "Send 6 to WhatsApp"
+      ],
+      "side": "left",
+      "hold": 0.5
+    },
+    {
+      "type": "phone",
+      "bg": "dark",
+      "say": "And zero photos land in your camera roll.",
+      "phone": "site/images-snapshare-phone-photos.webp",
+      "big": "*0*",
+      "title": "photos added to your camera roll.",
+      "points": [
+        "Saves storage",
+        "Or keep nothing at all"
+      ],
+      "side": "right",
+      "hold": 0.5
+    },
+    {
+      "type": "phone",
+      "say": "Or send straight from your home screen.",
+      "phone": "site/images-snapshare-phone-widgets-sunset.webp",
+      "title": "Send from your *home screen.*",
+      "points": [
+        "Widgets",
+        "Tap. Snap. Sent."
+      ],
+      "side": "left",
+      "hold": 0.5
+    },
+    {
+      "type": "quote",
+      "say": "It's free to start, and Pro is a one-time $2.99. No subscription.",
+      "title": "Free to *start.*",
+      "forLabel": "SnapShare for iPhone",
+      "checks": [
+        "30 free photos to start",
+        "Then 3 free photos every day",
+        "QR code scanning, always free"
+      ],
+      "priceLabel": "SnapShare Pro",
+      "price": "$2.99",
+      "stamp": "ONE-TIME",
+      "signature": "No subscription",
+      "signNote": "Yours forever, with every future Pro feature",
+      "signCue": "subscription"
+    },
+    {
+      "type": "end",
+      "say": "SnapShare. Snap it, send it, done.",
+      "name": "SnapShare",
+      "button": "Download on the App Store",
+      "url": "Free on iPhone"
+    }
+  ]
+}

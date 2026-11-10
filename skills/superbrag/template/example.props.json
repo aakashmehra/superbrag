@@ -1,0 +1,1 @@
+{"brand":{"name":"Example","url":"example.com","primary":"#3681de","accent":"#ffd43b","highlight":"#d9f99d","ink":"#111111","background":"sky","fonts":{"head":"Outfit","ui":"Inter","script":"Caveat"}},"scenes":[{"type":"end","start":0,"dur":90,"words":[],"props":{"name":"Example","button":"Start a project","url":"example.com"}}],"speech":[],"durationInFrames":90}

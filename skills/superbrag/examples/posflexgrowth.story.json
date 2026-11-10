@@ -1,0 +1,194 @@
+{
+  "brand": {
+    "name": "PosFlex Growth",
+    "url": "posflexgrowth.com",
+    "primary": "#0072ec",
+    "accent": "#fc8a00",
+    "highlight": "#9ee6c9",
+    "ink": "#120f0c",
+    "background": "light",
+    "fonts": {
+      "head": "Space Grotesk",
+      "ui": "Inter",
+      "script": "Caveat"
+    },
+    "paper": "#faf7f2",
+    "dark": "#120f0c",
+    "style": {
+      "radius": 18,
+      "border": "#e7e0d6",
+      "shadow": "soft",
+      "tracking": -0.02,
+      "headWeight": 700,
+      "emphasis": "#0072ec"
+    }
+  },
+  "voice": {
+    "provider": "kokoro",
+    "voice": "af_heart",
+    "pronounce": {
+      "PosFlex": "Poss Flex",
+      "Sajal": "Sajjal"
+    }
+  },
+  "music": {
+    "track": "happy-beats-business-moves-vol-11-by-ende-dot-app.mp3",
+    "volume": 0.24
+  },
+  "scenes": [
+    {
+      "type": "search",
+      "say": "Your next patient is searching right now.",
+      "title": "Searching *right now*",
+      "query": "dentist near me",
+      "suggestions": [
+        "dentist near me open now",
+        "emergency dentist near me",
+        "dentist accepting new patients"
+      ]
+    },
+    {
+      "type": "results",
+      "say": "But another clinic shows up first.",
+      "query": "dentist near me",
+      "results": [
+        {
+          "title": "Another clinic · Book online",
+          "sub": "Open now · 1.2 km"
+        },
+        {
+          "title": "Another clinic · New patients welcome",
+          "sub": "Open now · 2.4 km"
+        },
+        {
+          "title": "Dental group near you",
+          "sub": "Sponsored"
+        }
+      ],
+      "title": "Not in the *top three*",
+      "pill": "Your clinic isn't on the map"
+    },
+    {
+      "type": "cost",
+      "enter": "slide",
+      "say": "And every missed call goes to whoever answers next.",
+      "title": "Every missed call is a *lost job*",
+      "label": "Calls this week",
+      "items": [
+        {
+          "name": "Calls from Google",
+          "price": "14"
+        },
+        {
+          "name": "Answered",
+          "price": "9"
+        }
+      ],
+      "totalLabel": "Missed",
+      "total": "5 calls",
+      "keep": "Jobs you book",
+      "cut": "missed calls",
+      "cutCue": "answers"
+    },
+    {
+      "type": "meet",
+      "say": "Meet Sajal Kumar, PosFlex founder in New Zealand, who got his own restaurant into Google's top three.",
+      "photo": "site/sajal-photo.jpg",
+      "kicker": "Meet",
+      "name": "Sajal Kumar",
+      "role": "PosFlex founder in",
+      "place": "New Zealand",
+      "tagline": "Got his own restaurant into Google's top three"
+    },
+    {
+      "type": "browser",
+      "say": "Every missed call gets texted back and booked. None of them missed.",
+      "screenshot": "site/screenshot-hero.png",
+      "tab": "PosFlex Growth · Growth system",
+      "panel": {
+        "title": "Missed call · just now",
+        "items": [
+          {
+            "name": "Text-back sent",
+            "price": "0:03"
+          },
+          {
+            "name": "Reply",
+            "price": "Check-up?"
+          }
+        ],
+        "chips": [
+          "Missed",
+          "Texted",
+          "Booked"
+        ],
+        "extra": {
+          "title": "Sorry we missed you, we'll call you right back.",
+          "sub": "Sent automatically"
+        },
+        "highlight": {
+          "label": "Missed jobs",
+          "value": "0",
+          "cue": "None"
+        },
+        "button": "Book appointment"
+      }
+    },
+    {
+      "type": "answer",
+      "enter": "blur",
+      "say": "Top three on Google Maps, and named when people ask AI.",
+      "query": "dentist near me",
+      "result": {
+        "rank": "#1",
+        "name": "Your business",
+        "meta": "Dentist · Open now · Google Maps",
+        "rating": 4.9,
+        "ratingLabel": "4.9 on Google"
+      },
+      "below": "2 · Another clinic     3 · Another clinic",
+      "aiLabel": "AI answer",
+      "answer": "I'd recommend Your business. They list their services, prices and hours clearly.",
+      "source": {
+        "icon": "site/apple-touch-icon.png",
+        "label": "Quoted from your Google profile"
+      }
+    },
+    {
+      "type": "quote",
+      "say": "And our zero-risk promise, in writing, with a 12-week target.",
+      "title": "Our *zero-risk promise*",
+      "forLabel": "For: Your clinic",
+      "checks": [
+        "Top three on Google Maps",
+        "Named in AI answers",
+        "Missed-call text-back"
+      ],
+      "priceLabel": "Lead target",
+      "price": "12 weeks",
+      "stamp": "ZERO RISK",
+      "signature": "PosFlex Growth",
+      "signNote": "Agreed in writing before we start",
+      "signCue": "writing"
+    },
+    {
+      "type": "payoff",
+      "say": "Three jobs: get found, get recommended, get booked.",
+      "headline": "Three jobs. *Get found, get recommended,*",
+      "highlight": "get booked",
+      "query": "dentist near me",
+      "toast": {
+        "title": "Appointment booked",
+        "sub": "New patient · check-up",
+        "meta": "Tomorrow · 9:30 am"
+      }
+    },
+    {
+      "type": "end",
+      "say": "Get your free growth plan from PosFlex Growth.",
+      "name": "PosFlex*.*",
+      "button": "Get your free growth plan",
+      "url": "posflexgrowth.com"
+    }
+  ]
+}

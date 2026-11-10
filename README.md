@@ -12,7 +12,7 @@
 - music and sound effects, mixed to streaming loudness
 - the site's own colours, fonts, cards and logo
 
-The video above was made by superbrag from just one input: **`posflexgrowth.com`**.
+The video above was made by superbrag from just one input: **`posflexgrowth.com`**. **Free to use:** [install it](#install-free) and run it locally.
 
 ---
 
@@ -69,40 +69,56 @@ One run takes about 3 minutes on a MacBook: capture under a minute, voice about 
 | Word timing | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) |
 | Audio and encoding | [FFmpeg](https://ffmpeg.org/) (EBU R128 loudness normalisation) |
 
-## Initial setup
+## Install (free)
 
-superbrag runs locally on macOS or Linux. Install these first:
+superbrag is free to use. It runs on your own machine with a free local voice (Kokoro), so a video costs nothing.
+
+**1. Prerequisites:** Node.js 22+, FFmpeg, Python 3.10+ and espeak-ng
 
 ```bash
-# 1. Node.js 22+ and FFmpeg
-brew install node ffmpeg
-
-# 2. Headless Chromium for website capture
-npm install -g playwright && npx playwright install chromium
-
-# 3. Python 3.11 with faster-whisper (word timings)
-python3.11 -m pip install faster-whisper
-
-# 4. Kokoro: free local text-to-speech, in its own environment
-brew install espeak-ng
-uv venv --python 3.11 .venv && uv pip install --python .venv/bin/python kokoro soundfile pip
-
-# 5. Remotion (video engine) + its headless browser
-npm install remotion @remotion/cli react react-dom && npx remotion browser ensure
+brew install node ffmpeg espeak-ng                         # macOS
+sudo apt install nodejs ffmpeg espeak-ng python3-venv      # Ubuntu / Debian
 ```
 
-Optional premium voices go in a `.env` file:
+**2. Add the skill** to Claude Code (or any agent that supports Agent Skills):
+
+```bash
+npx skills add https://github.com/aakashmehra/superbrag --skill superbrag
+```
+
+Or copy it by hand:
+
+```bash
+git clone https://github.com/aakashmehra/superbrag
+cp -R superbrag/skills/superbrag ~/.claude/skills/
+```
+
+**3. One-time setup.** Claude runs this automatically the first time you use the skill. To run it yourself:
+
+```bash
+bash ~/.claude/skills/superbrag/scripts/setup.sh
+```
+
+It installs Remotion and Playwright, plus a Python environment with Kokoro (voice) and faster-whisper (word timing). It takes a few minutes and downloads about 1 GB, mostly the voice model and PyTorch.
+
+## Use it
+
+In Claude Code:
+
+```text
+/superbrag https://yoursite.com
+```
+
+You get `superbrag-output/<site>/superbrag.mp4`. You can steer it with plain words: *"focus on the restaurant side"*, *"use a softer voice"*, *"make it about my app"*.
+
+**Optional premium voices:** add a key to `skills/superbrag/.env` (see `.env.example`):
 
 ```bash
 MINIMAX_API_KEY=        # about 5 cents per video
 ELEVENLABS_API_KEY=     # about 5 cents per video
-KOKORO_PYTHON=/path/to/.venv/bin/python   # free local voice, used when no key is set
 ```
 
 > Remotion is free for individuals and companies of up to 3 people. Larger teams need a [Remotion company licence](https://www.remotion.dev/license).
-
-**The superbrag engine itself (capture, story rules, scene library, voice pipeline) is private for now.**
-Want a video for your business, or early access? [Get in touch](https://www.aakashmehra.com).
 
 ## Hire me
 
@@ -136,4 +152,4 @@ If superbrag made you want a video like this, give it a ⭐. It helps other peop
 
 ---
 
-© 2026 Aakash Mehra. All rights reserved. The demo video shows [PosFlex Growth](https://posflexgrowth.com) and is shared with permission.
+© 2026 Aakash Mehra. The demo video shows [PosFlex Growth](https://posflexgrowth.com) and is shared with permission.
