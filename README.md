@@ -12,7 +12,7 @@
 - music and sound effects, mixed to streaming loudness
 - the site's own colours, fonts, cards and logo
 
-The video above was made by superbrag from just one input: **`posflexgrowth.com`**. **Free to use:** [install it](#install-free) and run it locally.
+The video above was made by superbrag from just one input: **`posflexgrowth.com`**. **Free to use:** [install it](#install-free) and run it locally. The skill itself: [`skills/superbrag/SKILL.md`](skills/superbrag/SKILL.md).
 
 ---
 
@@ -101,6 +101,15 @@ bash ~/.claude/skills/superbrag/scripts/setup.sh      # copied by hand, or insta
 ```
 
 It installs Remotion and Playwright, plus a Python environment with Kokoro (voice) and faster-whisper (word timing). It takes a few minutes and downloads about 1 GB, mostly the voice model and PyTorch.
+
+## What's in this repo
+
+- [`skills/superbrag/SKILL.md`](skills/superbrag/SKILL.md): the skill, meaning the step-by-step instructions the agent follows (capture → story → voice → render)
+- [`skills/superbrag/scripts/`](skills/superbrag/scripts): `capture.mjs` (website + design tokens), `build.py` (voice + word timing + timeline), `render.sh` (preview and final render), `tts.py` (Kokoro / MiniMax / ElevenLabs), `setup.sh` (one-time install)
+- [`skills/superbrag/template/`](skills/superbrag/template): the Remotion scene library (search, results, cost, meet, browser, phone, answer, quote, payoff, end)
+- [`skills/superbrag/examples/`](skills/superbrag/examples): finished stories for a website (PosFlex Growth) and an iPhone app (SnapShare)
+- [`skills/superbrag/assets/`](skills/superbrag/assets): music and sound effects ([credits](skills/superbrag/assets/CREDITS.md))
+- `media/`, `index.html`: the demo video and its page
 
 ## Use it
 
