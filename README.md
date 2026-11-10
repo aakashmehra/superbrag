@@ -2,7 +2,7 @@
 
 **Paste a website. Get a 30-second promo video in the site's own design, with a voiceover.**
 
-[![▶ Play the superbrag demo video: PosFlex Growth promo, made from posflexgrowth.com](media/poster.jpg)](https://aakashmehra.github.io/superbrag/)
+[![▶ Play the superbrag demo video: dentist near me, ranked #1 on Google Maps and recommended by AI. Made from posflexgrowth.com](media/cover-map.jpg)](https://aakashmehra.github.io/superbrag/)
 
 ▶️ **[Watch with sound](https://aakashmehra.github.io/superbrag/)** · [Download the MP4](media/posflexgrowth-superbrag.mp4)
 
@@ -29,7 +29,7 @@ The video above was made by superbrag from just one input: **`posflexgrowth.com`
 
 Nine beats, one concrete customer scenario. This is the PosFlex Growth video:
 
-![superbrag storyboard: search, problem, cost, meet the founder, product, AI answer, zero-risk promise, payoff, call to action](media/storyboard.jpg)
+![superbrag storyboard: search, problem, cost, product, AI answer, zero-risk promise, payoff, call to action](media/storyboard-scenes.jpg)
 
 | # | Beat | What happens on screen |
 |---|---|---|
