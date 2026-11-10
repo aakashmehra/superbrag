@@ -2,7 +2,7 @@
 
 **Paste a website. Get a 30-second promo video in the site's own design, with a voiceover.**
 
-<video src="https://github.com/aakashmehra/superbrag/raw/main/media/posflexgrowth-superbrag.mp4" poster="media/poster.jpg" controls width="100%"></video>
+[![▶ Play the superbrag demo video: PosFlex Growth promo, made from posflexgrowth.com](media/poster.jpg)](https://aakashmehra.github.io/superbrag/)
 
 ▶️ **[Watch with sound](https://aakashmehra.github.io/superbrag/)** · [Download the MP4](media/posflexgrowth-superbrag.mp4)
 
