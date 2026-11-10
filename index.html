@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>superbrag: turn any website into a promo video with a voiceover</title>
+<meta name="description" content="superbrag turns any business website into a 30-second promo video with a voiceover, music and motion, in the site's own colours and fonts. An AI agent skill for Claude Code, built with Remotion and Kokoro TTS.">
+<meta name="keywords" content="website to video, AI promo video generator, Claude Code skill, agent skills, Remotion, text to speech, Kokoro TTS, launch video, marketing video, superbrag">
+<meta property="og:title" content="superbrag: website in, promo video out">
+<meta property="og:description" content="Paste a website. Get a 30-second promo video in the site's own design, with a voiceover.">
+<meta property="og:image" content="https://aakashmehra.github.io/superbrag/media/poster.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #faf7f2; --ink: #120f0c; --muted: #5f5850; --brand: #0072ec; --line: #e7e0d6; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #120f0c; --ink: #f6f2ec; --muted: #a9a094; --line: #2b2622; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 Inter, system-ui, sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font: 700 clamp(36px, 6vw, 64px)/1.05 "Space Grotesk", sans-serif; letter-spacing: -0.02em; margin: 0 0 14px; }
+  h1 span { color: var(--brand); }
+  p.lead { color: var(--muted); font-size: clamp(17px, 2.2vw, 20px); margin: 0 0 32px; max-width: 640px; }
+  video { width: 100%; border-radius: 20px; border: 1px solid var(--line); box-shadow: 0 30px 60px -14px rgba(0,114,236,.18); background: #000; display: block; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  a.btn { display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 500; text-decoration: none; border: 1px solid var(--line); color: var(--ink); }
+  a.btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+  small { display: block; margin-top: 40px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Website in. <span>Promo video out.</span></h1>
+  <p class="lead">superbrag turns any business website into a 30-second promo video in the site's own design, with a voiceover, music and word-synced motion. This one was made from <strong>posflexgrowth.com</strong>.</p>
+  <video src="media/posflexgrowth-superbrag.mp4" poster="media/poster.jpg" controls playsinline preload="metadata"></video>
+  <div class="row">
+    <a class="btn primary" href="https://www.aakashmehra.com">Hire me: get a video or a website</a>
+    <a class="btn" href="https://github.com/aakashmehra/superbrag">⭐ Star on GitHub</a>
+  </div>
+  <small>© 2026 Aakash Mehra · Music: Sascha Ende, ende.app (CC BY 4.0) · SFX: Kenney (CC0)</small>
+</main>
+</body>
+</html>
