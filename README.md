@@ -93,10 +93,11 @@ git clone https://github.com/aakashmehra/superbrag
 cp -R superbrag/skills/superbrag ~/.claude/skills/
 ```
 
-**3. One-time setup.** Claude runs this automatically the first time you use the skill. To run it yourself:
+**3. One-time setup.** Claude runs this automatically the first time you use the skill. To run it yourself, from your project folder:
 
 ```bash
-bash ~/.claude/skills/superbrag/scripts/setup.sh
+bash .agents/skills/superbrag/scripts/setup.sh        # installed with npx skills add
+bash ~/.claude/skills/superbrag/scripts/setup.sh      # copied by hand, or installed with -g
 ```
 
 It installs Remotion and Playwright, plus a Python environment with Kokoro (voice) and faster-whisper (word timing). It takes a few minutes and downloads about 1 GB, mostly the voice model and PyTorch.
